@@ -11,3 +11,8 @@ textarea {
 .download a {
     display: block;
 }
+.markdown {
+    text-align: justify;
+    text-indent: 1.0cm;
+    line-height: 2;
+}
