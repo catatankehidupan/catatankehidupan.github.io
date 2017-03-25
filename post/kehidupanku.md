@@ -1,1 +1,0 @@
-Hidup ini memang unik ya. Nggak kepikiran kan tiba-tiba aku masuk di jurusan yang banyak ceweknya.
