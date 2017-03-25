@@ -18,12 +18,12 @@ postingan = glob.glob(lokasi+"post/*.md")
 fpostingan = postingan[:]
 target = postingan[:]
 judul = postingan[:]
-link = postingan[:]
 for n, x in enumerate(target):
     target[n] = re.sub(r"/post/", r"/html/", target[n])
     target[n] = re.sub(r" ", r"-", target[n])
     target[n] = target[n][:-3] + ".html"
 # print target
+link = target[:]
 for n, x in enumerate(judul):
     judul[n] = re.sub(r""+lokasi+"post/", r"", judul[n])
     judul[n] = re.sub(r".md", r"", judul[n])
@@ -41,9 +41,7 @@ for n, x in enumerate(postingan):
     fpostingan[n] = "".join(str(x) for x in fpostingan[n])
     open(target[n], "w").write(fpostingan[n])
 for n, x in enumerate(link):
-    link[n] = re.sub(r""+lokasi+"post/", r"", link[n])
-    link[n] = re.sub(r".md", r".html", link[n])
-    link[n] = re.sub(r" ", r"-", link[n])
+    link[n] = re.sub(r""+lokasi+"html/", r"", link[n])
 # print link
 home.write("<script>location.href='html/"+link[0]+"'</script>")
 inputdata = dataawal
