@@ -1,3 +1,5 @@
+Sabtu, 25 Maret 2017
+
 Dalam kehidupan ini kita harus punya target. Kalau bagi orang yang sensing atau pengindra, target itu nggak perlu yang jangkauannya jauh, cukup misalnya sehari baca buku berapa halaman atau sehari nulis berapa kata. Berbeda dengan orang bertipe intuisi yang memang harus gambaran besarnya dulu yang harus direncanakan.
 
 Targetku yang senantiasa kupertahankan adalah membaca 5 juz dan 1 buku.
