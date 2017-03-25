@@ -11,3 +11,12 @@ textarea {
 .download a {
     display: block;
 }
+.markdown {
+    line-height: 2;
+}
+@media screen and (min-width: 570px){
+    .markdown {
+        text-align: justify;
+        text-indent: 1cm;
+    }
+}

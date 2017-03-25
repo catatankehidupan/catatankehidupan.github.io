@@ -1,1 +1,1 @@
-post=[{judul:"Melakukan Perbaikan Terus-Menerus",link:"melakukan-perbaikan-terus-menerus.html"},{judul:"Mengisi Hari Dengan Buku Dan Quran",link:"mengisi-hari-dengan-buku-dan-quran.html"},]
+post=[{judul:"Melakukan Perbaikan Terus-Menerus",link:"melakukan-perbaikan-terus-menerus.html"},{judul:"Mengisi Hari Dengan Buku Dan Quran",link:"mengisi-hari-dengan-buku-dan-quran.html"},{judul:"Mau Jadi Apa Kita Sebenarnya Adalah Pilihan",link:"mau-jadi-apa-kita-sebenarnya-adalah-pilihan.html"},]
