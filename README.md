@@ -1,1 +1,0 @@
-# catatankehidupan.github.io
