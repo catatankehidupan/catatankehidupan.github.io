@@ -1,0 +1,1 @@
+Mungkin di kehidupan ini, kita akan menemui banyak masalah. Tapi, jangan menyerah, kawan.
