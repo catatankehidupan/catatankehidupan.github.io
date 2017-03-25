@@ -1,4 +1,4 @@
-import glob, re
+import glob, re, random
 
 lokasi = "/sdcard/Git/catatan-kehidupan/"
 home = open(lokasi+"index.html", "w")
@@ -43,7 +43,8 @@ for n, x in enumerate(postingan):
 for n, x in enumerate(link):
     link[n] = re.sub(r""+lokasi+"html/", r"", link[n])
 # print link
-banyak = len(link)/2
+banyak = len(link)
+banyak = random.randrange(banyak)
 # print banyak
 home.write("<script>location.href='html/"+link[banyak]+"'</script>")
 inputdata = dataawal
