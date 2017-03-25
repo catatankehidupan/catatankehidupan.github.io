@@ -43,7 +43,9 @@ for n, x in enumerate(postingan):
 for n, x in enumerate(link):
     link[n] = re.sub(r""+lokasi+"html/", r"", link[n])
 # print link
-home.write("<script>location.href='html/"+link[0]+"'</script>")
+banyak = len(link)/2
+# print banyak
+home.write("<script>location.href='html/"+link[banyak]+"'</script>")
 inputdata = dataawal
 for n, x in enumerate(judul):
     inputdata += data1
