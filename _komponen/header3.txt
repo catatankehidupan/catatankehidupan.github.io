@@ -1,0 +1,12 @@
+
+      </h1>
+      <h2 class="subtitle">
+          <br>
+          Catatan Kehidupan
+      </h2>
+    </div>
+  </div>
+</section>
+<hr>
+<div class="markdown content"></div>
+<textarea>

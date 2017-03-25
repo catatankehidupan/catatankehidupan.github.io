@@ -1,0 +1,11 @@
+ - Catatan Kehidupan</title>
+<link rel="stylesheet" href="bin/bulma.css"/>
+<link rel="stylesheet" href="bin/style.css"/>
+</head>
+<body>
+<br>
+<section class="hero">
+  <div class="hero-body has-text-centered">
+    <div class="container">
+      <h1 class="title">
+        

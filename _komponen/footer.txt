@@ -1,0 +1,14 @@
+
+</textarea>
+<hr>
+<div class="columns content">
+<a href="#" class="column link1"><div class="notification is-danger">satu</div></a>
+<a href="#" class="column link2"><div class="notification is-warning">satu</div></a>
+<a href="#" class="column link3"><div class="notification is-success">satu</div></a>
+</div>
+<script src="bin/jquery.min.js"></script>
+<script src="bin/marked.min.js"></script>
+<script src="bin/data.js"></script>
+<script src="bin/app.js"></script>
+</body>
+</html>
