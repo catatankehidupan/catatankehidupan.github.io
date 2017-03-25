@@ -1,4 +1,1 @@
-post = [{
-judul: "Jangan Menyerah, Kawan",
-link: "jangan menyerah, kawan.html"
-},]
+post=[{judul:"Tes",link:"tes.html"},{judul:"Halo",link:"halo.html"},]

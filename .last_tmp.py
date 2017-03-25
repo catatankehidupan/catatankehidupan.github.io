@@ -14,7 +14,7 @@ data2 = open(lokasi+"_komponen/data2.txt").read()
 data3 = open(lokasi+"_komponen/data3.txt").read()
 
 postingan = glob.glob(lokasi+"post/*.md")
-print postingan
+# print postingan
 fpostingan = postingan[:]
 target = postingan[:]
 judul = postingan[:]
@@ -22,7 +22,7 @@ link = postingan[:]
 for n, x in enumerate(target):
     target[n] = re.sub(r"/post/", r"/html/", target[n])
     target[n] = target[n][:-3] + ".html"
-print target
+# print target
 for n, x in enumerate(judul):
     judul[n] = re.sub(r""+lokasi+"post/", r"", judul[n])
     judul[n] = re.sub(r".md", r"", judul[n])
@@ -42,7 +42,7 @@ for n, x in enumerate(postingan):
 for n, x in enumerate(link):
     link[n] = re.sub(r""+lokasi+"post/", r"", link[n])
     link[n] = re.sub(r".md", r".html", link[n])
-print link
+# print link
 home.write("<script>location.href='html/"+link[0]+"'</script>")
 inputdata = dataawal
 for n, x in enumerate(judul):
