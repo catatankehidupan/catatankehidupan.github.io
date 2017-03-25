@@ -1,5 +1,3 @@
-![](http://pre09.deviantart.net/a029/th/pre/f/2014/168/9/7/book_of_imagination_by_t1na-d7mlgj9.jpg)
-
 Sabtu, 25 Maret 2017
 
 Waktu, orang bilang sebagai sesuatu yang sangat berharga. Bahkan, ketika kamu tidak bisa memanfaatkan waktu sebaik-baiknya, maka, masa depanmu bisa terancam. Jangankan masa depan, kalau kita menyia-nyiakan waktu, kebiasaan menyia-nyiakan waktu inilah yang akan menyebabkan kita menjadi terbiasa dengan kegiatan menyia-nyiakan segala hal.
