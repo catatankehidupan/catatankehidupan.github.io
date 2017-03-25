@@ -1,0 +1,1 @@
+Hai semuanya... ini adalah blog yang dibuat dengan Python
