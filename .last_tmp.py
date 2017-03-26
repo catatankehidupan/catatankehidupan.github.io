@@ -45,7 +45,7 @@ for n, x in enumerate(postingan):
     link1 = more[0][1]
     link2 = more[1][1]
     link3 = more[2][1]
-    situslengkap = situs+"/html/bin/"+link[n]
+    situslengkap = situs+"/html/"+link[n]
     dict = {
     	    "title": title,
     	    "isi": isi,
