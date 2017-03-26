@@ -9,7 +9,7 @@
     <meta name="description" content="$deskripsi">
     <meta name="author" content="$judulsitus">    
     <link rel="shortcut icon" href="bin/favicon.ico">  
-     <meta content="$judulsitus" property="og:title">
+     <meta content="$title - $judulsitus" property="og:title">
  	<meta content="$situslengkap" property="og:url">
  	<meta content="$judulsitus" property="og:site_name">
  	<meta content="$deskripsi..." property="og:description">
@@ -17,7 +17,7 @@
  	<meta content="blog" property="og:type">
  	<meta content="summary_large_image" name="twitter:card">
  	<meta content="$deskripsi..." name="twitter:description">
- 	<meta content="$judulsitus" name="twitter:title">
+ 	<meta content="$title - $judulsitus" name="twitter:title">
  	<meta content="$situslengkap" name="twitter:url">
  	<meta content="$judulsitus" name="twitter:site">
  	<meta content="@mzaini30" name="twitter:creator">
