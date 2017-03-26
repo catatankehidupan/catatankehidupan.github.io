@@ -45,6 +45,7 @@ for n, x in enumerate(postingan):
     link1 = more[0][1]
     link2 = more[1][1]
     link3 = more[2][1]
+    situslengkap = situs+"/html/bin/"+link[n]
     dict = {
     	    "title": title,
     	    "isi": isi,
@@ -56,6 +57,7 @@ for n, x in enumerate(postingan):
     	    "link2": link2,
     	    "link3": link3,
     	    "situs": situs,
+    	    "situslengkap": situslengkap,
     	    "judulsitus": judulsitus
     	}
     hasil = konten.substitute(dict)
