@@ -27,9 +27,9 @@ $isi
 </textarea>
 <hr>
 <div class="columns content">
-<a href="$link1" class="column link1"><div class="notification is-danger">$judul1</div></a>
-<a href="$link2" class="column link2"><div class="notification is-warning">$judul2</div></a>
-<a href="$link3" class="column link3"><div class="notification is-success">$judul3</div></a>
+<a href="$link1" class="column"><div class="notification is-danger">$judul1</div></a>
+<a href="$link2" class="column"><div class="notification is-warning">$judul2</div></a>
+<a href="$link3" class="column"><div class="notification is-success">$judul3</div></a>
 </div>
 <hr>
 <p class="has-text-centered download"><a href="https://github.com/catatankehidupan/catatankehidupan.github.io/archive/master.zip">Download situs ini</a></p>
