@@ -12,6 +12,11 @@ textarea {
     line-height: 2;
     max-width: 696px;
 }
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+    text-indent: 0;
+}
 @media screen and (min-width: 570px){
     .markdown {
         text-align: justify;
