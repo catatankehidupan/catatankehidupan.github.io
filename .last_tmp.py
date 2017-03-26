@@ -1,6 +1,6 @@
 import glob, re, random, string
 
-lokasi = "/sdcard/Git/catatan-kehidupan/"
+lokasi = "/sdcard/Git/catatankehidupan/"
 
 index = open(lokasi+"index.html", "w")
 konten = open(lokasi+"_template/konten.txt").read()
