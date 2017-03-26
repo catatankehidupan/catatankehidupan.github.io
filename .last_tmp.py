@@ -1,58 +1,56 @@
-import glob, re, random
+import glob, re, random, string
 
 lokasi = "/sdcard/Git/catatan-kehidupan/"
-home = open(lokasi+"index.html", "w")
-header1 = open(lokasi+"_komponen/header1.txt").read()
-header2 = open(lokasi+"_komponen/header2.txt").read()
-header3 = open(lokasi+"_komponen/header3.txt").read()
-footer = open(lokasi+"_komponen/footer.txt").read()
-data = open(lokasi+"html/bin/data.js", "w")
-dataawal = open(lokasi+"_komponen/data awal.txt").read()
-dataakhir = open(lokasi+"_komponen/data akhir.txt").read()
-data1 = open(lokasi+"_komponen/data1.txt").read()
-data2 = open(lokasi+"_komponen/data2.txt").read()
-data3 = open(lokasi+"_komponen/data3.txt").read()
+
+index = open(lokasi+"index.html", "w")
+konten = open(lokasi+"_template/konten.txt").read()
+konten = string.Template(konten)
 
 postingan = glob.glob(lokasi+"post/*.md")
-# print postingan
 fpostingan = postingan[:]
 target = postingan[:]
 judul = postingan[:]
+
 for n, x in enumerate(target):
     target[n] = re.sub(r"/post/", r"/html/", target[n])
     target[n] = re.sub(r" ", r"-", target[n])
     target[n] = target[n][:-3] + ".html"
-# print target
 link = target[:]
 for n, x in enumerate(judul):
     judul[n] = re.sub(r""+lokasi+"post/", r"", judul[n])
     judul[n] = re.sub(r".md", r"", judul[n])
     judul[n] = judul[n].title()
-print judul
-for n, x in enumerate(postingan):
-    fpostingan[n] = []
-    fpostingan[n].append(header1)
-    fpostingan[n].append(judul[n])
-    fpostingan[n].append(header2)
-    fpostingan[n].append(judul[n])
-    fpostingan[n].append(header3)
-    fpostingan[n].append(open(x).read())
-    fpostingan[n].append(footer)
-    fpostingan[n] = "".join(str(x) for x in fpostingan[n])
-    open(target[n], "w").write(fpostingan[n])
 for n, x in enumerate(link):
     link[n] = re.sub(r""+lokasi+"html/", r"", link[n])
-# print link
+more = []
+for n, x in enumerate(judul):
+    more.append(judul[n]+"gebfhahs"+link[n])
+more = [x.split("gebfhahs") for x in more]
+for n, x in enumerate(postingan):
+    random.shuffle(more)
+    title = judul[n]
+    isi = open(x).read()
+    judul1 = more[0][0]
+    judul2 = more[1][0]
+    judul3 = more[2][0]
+    link1 = more[0][1]
+    link2 = more[1][1]
+    link3 = more[2][1]
+    dict = {
+    	    "title": title,
+    	    "isi": isi,
+    	    "judul1": judul1,
+    	    "judul2": judul2,
+    	    "judul3": judul3,
+    	    "link1": link1,
+    	    "link2": link2,
+    	    "link3": link3
+    	}
+    hasil = konten.substitute(dict)
+    open(target[n], "w").write(hasil)
 banyak = len(link)
 banyak = random.randrange(banyak)
-# print banyak
-home.write("<script>location.href='html/"+link[banyak]+"'</script>")
-inputdata = dataawal
+index.write("<script>location.href='html/"+link[banyak]+"'</script>")
 for n, x in enumerate(judul):
-    inputdata += data1
-    inputdata += x
-    inputdata += data2
-    inputdata += link[n]
-    inputdata += data3
-inputdata += dataakhir
-data.write(inputdata)
+    print str(n+1)+". ",
+    print x
