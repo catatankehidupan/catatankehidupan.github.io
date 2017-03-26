@@ -2,9 +2,11 @@ import glob, re, random, string
 
 lokasi = "/sdcard/Git/catatankehidupan2/"
 
-index = open(lokasi+"index.html", "w")
+indexhtml = open(lokasi+"index.html", "w")
 konten = open(lokasi+"_template/konten.txt").read()
 konten = string.Template(konten)
+index = open(lokasi+"_template/index.txt").read()
+index = string.Template(index)
 
 postingan = glob.glob(lokasi+"post/*.md")
 fpostingan = postingan[:]
@@ -26,10 +28,17 @@ more = []
 for n, x in enumerate(judul):
     more.append(judul[n]+"gebfhahs"+link[n])
 more = [x.split("gebfhahs") for x in more]
+
+situs = "https://catatankehidupan.github.io"
+judulsitus = "Catatan Kehidupan"
+
 for n, x in enumerate(postingan):
     random.shuffle(more)
     title = judul[n]
     isi = open(x).read()
+    deskripsi = isi[:150]
+    deskripsi = re.sub(r"\n", r" ", deskripsi)
+    deskripsi = re.sub(r"\"", r"'", deskripsi)
     judul1 = more[0][0]
     judul2 = more[1][0]
     judul3 = more[2][0]
@@ -39,18 +48,29 @@ for n, x in enumerate(postingan):
     dict = {
     	    "title": title,
     	    "isi": isi,
+    	    "deskripsi": deskripsi,
     	    "judul1": judul1,
     	    "judul2": judul2,
     	    "judul3": judul3,
     	    "link1": link1,
     	    "link2": link2,
-    	    "link3": link3
+    	    "link3": link3,
+    	    "situs": situs,
+    	    "judulsitus": judulsitus
     	}
     hasil = konten.substitute(dict)
     open(target[n], "w").write(hasil)
 banyak = len(link)
 banyak = random.randrange(banyak)
-index.write("<script>location.href='html/"+link[banyak]+"'</script>")
+direct = link[banyak]
+kamus = {
+    "situs": situs,
+    "judulsitus": judulsitus,
+    "direct": direct
+}
+selesai = index.substitute(kamus)
+indexhtml.write(selesai)
+# index.write("<script>location.href='html/"+link[banyak]+"'</script>")
 for n, x in enumerate(judul):
     print str(n+1)+". ",
     print x
