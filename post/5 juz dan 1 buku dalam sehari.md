@@ -8,4 +8,4 @@ Hei, kau tau, aku sampai buat aplikasi lo untuk mengingatkan mengaji 5 juz Quran
 
 Coba deh kita pikir, untuk apa coba kita membuat target tapi nggak dipenuhi? Target tu kan batas minimal?
 
-Dan juga sekarang kisahnya aku mau berubah ni, jadi pribadi yang detail. Itu kalau di MBTI kepribadian yang mana ya? Nggak tau ah.
+Dan juga sekarang kisahnya aku mau berubah ni, jadi pribadi yang detail. Itu kalau di MBTI kepribadian yang mana ya? Nggak tau ah. Tapi ada sih memang dijelaskan di buku itu.
