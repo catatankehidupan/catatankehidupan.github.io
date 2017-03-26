@@ -13,6 +13,7 @@ textarea {
 }
 .markdown {
     line-height: 2;
+    max-width: 696px;
 }
 @media screen and (min-width: 570px){
     .markdown {
