@@ -21,7 +21,11 @@ link = target[:]
 for n, x in enumerate(judul):
     judul[n] = re.sub(r""+lokasi+"post/", r"", judul[n])
     judul[n] = re.sub(r".md", r"", judul[n])
+    judul[n] = re.sub(r"\(tandatanya\)", r"?", judul[n])
     judul[n] = judul[n].title()
+for n, x in enumerate(judul):
+    print str(n+1)+". ",
+    print x
 for n, x in enumerate(link):
     link[n] = re.sub(r""+lokasi+"html/", r"", link[n])
 more = []
@@ -79,8 +83,3 @@ kamus = {
     "direct": direct
 }
 selesai = index.substitute(kamus)
-indexhtml.write(selesai)
-# index.write("<script>location.href='html/"+link[banyak]+"'</script>")
-for n, x in enumerate(judul):
-    print str(n+1)+". ",
-    print x
