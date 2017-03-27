@@ -42,20 +42,28 @@ for n, x in enumerate(postingan):
     judul1 = more[0][0]
     judul2 = more[1][0]
     judul3 = more[2][0]
+    judul4 = more[3][0]
+    judul5 = more[4][0]
     link1 = more[0][1]
     link2 = more[1][1]
     link3 = more[2][1]
+    link4 = more[3][1]
+    link5 = more[4][1]
     situslengkap = situs+"/html/"+link[n]
     dict = {
-    	    "title": title,
+    	    "judul": title,
     	    "isi": isi,
     	    "deskripsi": deskripsi,
     	    "judul1": judul1,
     	    "judul2": judul2,
     	    "judul3": judul3,
+    	    "judul4": judul4,
+    	    "judul5": judul5,
     	    "link1": link1,
     	    "link2": link2,
     	    "link3": link3,
+    	    "link4": link4,
+    	    "link5": link5,
     	    "situs": situs,
     	    "situslengkap": situslengkap,
     	    "judulsitus": judulsitus
