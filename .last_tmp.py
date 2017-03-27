@@ -83,3 +83,4 @@ kamus = {
     "direct": direct
 }
 selesai = index.substitute(kamus)
+indexhtml.write(selesai)
