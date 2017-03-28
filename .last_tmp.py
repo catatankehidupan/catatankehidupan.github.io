@@ -1,4 +1,4 @@
-import glob, re, random, string
+import glob, re, random, string, os
 
 lokasi = "/sdcard/Git/catatankehidupan2/"
 
@@ -13,22 +13,30 @@ fpostingan = postingan[:]
 target = postingan[:]
 judul = postingan[:]
 
+semuahtml = glob.glob(lokasi+"html/*.html")
+for x in semuahtml:
+    os.remove(x)
+    
 for n, x in enumerate(target):
     target[n] = re.sub(r"/post/", r"/html/", target[n])
     target[n] = re.sub(r" ", r"-", target[n])
     target[n] = target[n][:-3] + ".html"
 link = target[:]
+
 for n, x in enumerate(judul):
     judul[n] = re.sub(r""+lokasi+"post/", r"", judul[n])
     judul[n] = re.sub(r".md", r"", judul[n])
     judul[n] = re.sub(r"\(ask\)", r"?", judul[n])
     judul[n] = judul[n].title()
+    
 for n, x in enumerate(judul):
     print str(n+1)+". ",
     print x
+    
 for n, x in enumerate(link):
     link[n] = re.sub(r""+lokasi+"html/", r"", link[n])
 more = []
+
 for n, x in enumerate(judul):
     more.append(judul[n]+"gebfhahs"+link[n])
 more = [x.split("gebfhahs") for x in more]
@@ -74,6 +82,7 @@ for n, x in enumerate(postingan):
     	}
     hasil = konten.substitute(dict)
     open(target[n], "w").write(hasil)
+    
 banyak = len(link)
 banyak = random.randrange(banyak)
 direct = link[banyak]
