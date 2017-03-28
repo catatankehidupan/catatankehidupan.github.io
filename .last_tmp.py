@@ -21,7 +21,7 @@ link = target[:]
 for n, x in enumerate(judul):
     judul[n] = re.sub(r""+lokasi+"post/", r"", judul[n])
     judul[n] = re.sub(r".md", r"", judul[n])
-    judul[n] = re.sub(r"\(tandatanya\)", r"?", judul[n])
+    judul[n] = re.sub(r"\(ask\)", r"?", judul[n])
     judul[n] = judul[n].title()
 for n, x in enumerate(judul):
     print str(n+1)+". ",
