@@ -1,3 +1,0 @@
-Selasa, 28 Maret 2017
-
-Harusnya selesai dulu 5 juz baru ngerjain yang lain. Semangat...
